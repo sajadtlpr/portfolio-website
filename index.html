@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- SEO -->
+    <meta
+      name="description"
+      content="Abdulla Sajad, a seasoned Software Engineer renowned for consistently delivering exceptional projects, characterized by their quality, precision, and high performance"
+    />
+
+    <meta property="og:title" content="Abdulla Sajad - Software Engineer" />
+
+    <meta
+      property="og:description"
+      content="Abdulla Sajad - Software Engineer, Abdulla Sajad, a seasoned Software Engineer renowned for consistently delivering exceptional projects, characterized by their quality, precision, and high performance.">
+
+    <meta
+      property="og:image"
+      content=""
+    />
+
+    <meta property="og:url" content="https://sajadtlpr.github.io/" />
+
+    <meta property="og:type" content="website" />
+
+    <meta property="og:site_name" content="Abdulla Sajad" />
+
+    <meta
+      property="og:description"
+      content="Abdulla Sajad - Software Engineer,a seasoned Software Engineer renowned for consistently delivering exceptional projects, characterized by their quality, precision, and high performance."
+    />
+
+    <meta property="og:locale" content="vi_VN" />
+
+    <meta
+      property="article:author"
+      content="https://www.facebook.com/sajadtlpr/"
+    />
+
+    <meta
+      property="article:publisher"
+      content="https://www.facebook.com/sajadtlpr/"
+    />
+
+    <meta property="article:tag" content="Abdulla Sajad" />
+
+    <meta property="article:section" content="Abdulla Sajad" />
+
+    <meta
+      property="article:published_time"
+      content="2023-09-20T15:48:38+07:00"
+    />
+
+    <meta property="article:modified_time" content="2023-09-17T1:15:38+07:00" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary" />
+
+    <meta name="twitter:title" content="Abdulla Sajad - Software Engineer" />
+
+    <meta
+      name="twitter:description"
+      content="a seasoned Software Engineer renowned for consistently delivering exceptional projects, characterized by their quality, precision, and high performance."
+    />
+
+    <meta
+      name="twitter:image"
+      content=""
+    />
+
+    <meta
+      property="description"
+      content="With knowledge in web development and design, I offer the best projects resulting in quality work."
+    />
+
+    <meta name="twitter:site" content="@sajadtlpr" />
+
+    <meta name="twitter:creator" content="@sajadtlpr" />
+
+    <meta name="twitter:domain" content="https://sajadtlpr.github.io/" />
+
+    <meta name="twitter:label1" content="Written by" />
+
+    <meta name="twitter:data1" content="Abdulla Sajad" />
+
+    <meta name="twitter:label2" content="Filed under" />
+
+    <meta name="twitter:data2" content="Abdulla Sajad" />
+
+    <meta name="twitter:label3" content="Tagged" />
+
+    <meta name="twitter:data3" content="Abdulla Sajad" />
+
+    <!--=============== FAVICON ===============-->
+    <link
+      rel="shortcut icon"
+      href="assets/img/favicon.webp"
+      type="image/x-icon"
+    />
+
+    <!--=============== REMIXICONS ===============-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css"
+      crossorigin=""
+    />
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="stylesheet" href="assets/css/mediaqueries.css" />
+
+    <title>Abdulla Sajad</title>
+
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-JZPHEF7YXK"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-JZPHEF7YXK");
+    </script>
+
+    <!-- CAPTCHA GOOGLE -->
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script>
+      function enableBtn(token) {
+        if (token) {
+          document.querySelector("#contact-button").disabled = false;
+        }
+      }
+
+      function reVerify() {
+        grecaptcha.reset();
+        document.querySelector("#contact-button").disabled = true;
+      }
+
+      function tokenExpired() {
+        document.querySelector("#contact-button").disabled = true;
+      }
+    </script>
+  </head>
+
+  <body>
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="#" class="nav__logo">
+          <span class="nav__logo-circle">S</span>
+          <span class="nav__logo-name">Sajad.tlpr</span>
+        </a>
+
+        <div class="nav__menu" id="nav-menu">
+          <span class="nav__title">Menu</span>
+
+          <h3 class="nav__name">tlpr</h3>
+
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#home" class="nav__link">Home</a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#about" class="nav__link">About Me</a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#projects" class="nav__link">Projects</a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#contact" class="nav__link">Contact Me</a>
+            </li>
+
+            <li class="nav__item">
+              <a
+                href="/assets/cv/cv_AbdullaSajad.pdf"
+                target="_blank"
+                class="nav__link nav__link-button"
+              >
+                <i class="ri-download-2-line"></i> Download CV
+              </a>
+            </li>
+          </ul>
+          <!-- Close button -->
+          <div class="nav__close" id="nav-close">
+            <i class="ri-close-line"></i>
+          </div>
+        </div>
+
+        <div class="nav__buttons">
+          <!-- Theme button -->
+          <i class="change-theme" id="theme-button"></i>
+          <!-- Toggle button -->
+          <div class="nav__toggle" id="nav-toggle">
+            <i class="ri-menu-4-line"></i>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!--==================== MAIN ====================-->
+    <main class="main">
+      <!--==================== HOME ====================-->
+      <section class="home section" id="home">
+        <div class="home__container container grid">
+          <h1 class="home__name">Sajad tlpr</h1>
+
+          <div class="home__perfil">
+            <div class="home__image">
+              <img
+                src="/assets/img/home-perfil.webp"
+                alt="home-peril"
+                class="home__img"
+              />
+              <div class="home__shadow"></div>
+
+              <img
+                src="/assets/img/curved-arrow.svg"
+                alt="curved-arrow"
+                class="home__arrow"
+              />
+              <img
+                src="/assets/img/random-lines.svg"
+                alt="random-lines"
+                class="home__line"
+              />
+
+              <div class="geometric-box"></div>
+            </div>
+
+            <div class="home__social">
+              <a
+                href="https://www.instagram.com/sajad.tlpr"
+                target="_blank"
+                class="home__social-link"
+              >
+                <i class="ri-instagram-line"></i>
+              </a>
+
+              <a
+                href="https://www.linkedin.com/in/abdulla-sajad-b7914124a"
+                target="_blank"
+                class="home__social-link"
+              >
+                <i class="ri-linkedin-box-line"></i>
+              </a>
+
+              <a
+                href="https://github.com/sajadtlpr"
+                target="_blank"
+                class="home__social-link"
+              >
+                <i class="ri-github-line"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="home__info">
+
+            <p class="home__description">
+              <b>Software Engineer</b>,
+              Versatile software expert. </p>
+
+            <a href="#about" class="home__scroll">
+              <div class="home__scroll-box">
+                <i class="ri-arrow-down-s-line"></i>
+              </div>
+
+              <span class="home__scroll-text">Scroll Down</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!--==================== ABOUT ====================-->
+      <section class="about section" id="about">
+        <div class="about__container container grid">
+          <h2 class="section__title-1">About Me.</h2>
+
+          <div class="about__perfil">
+            <div class="about__image">
+              <img
+                src="/assets/img/about-perfil.webp"
+                alt="about-perfil"
+                class="about__img"
+              />
+              <div class="about__shadow"></div>
+
+              <div class="geometric-box"></div>
+              <img
+                src="/assets/img/random-lines.svg"
+                alt="random-lines"
+                class="about__line"
+              />
+              <div class="about__box"></div>
+            </div>
+          </div>
+
+          <div class="about__info">
+            <p class="about__description">
+              <!-- Passionate about creating <b>Software Applications</b> with
+              <b>Expert Software Creation</b>, I have years of experience and 
+              clients are happy with the projects i have delivered. -->
+              Software Engineer with a passion for building optimized and
+              Serviceable <b>Software Applications</b>. Solid foundation in java, python ,
+              and JavaScript, with experience in <b>Spring, Django</b>. Adaptable
+              and collaborative, with a penchant for swiftly mastering new concepts and embracing fresh challenges.
+            </p>
+            <ul class="about__list">
+              <li class="about__item">
+                <b>My Skills Are:</b> 
+                HTML, CSS, JavaScript, React, Git & GitHub, Node.js, Java, Python, MySQL, PostgreSQL, AWS, and Azure.
+
+              </li>
+            </ul>
+
+            <div class="about__buttons">
+              <a
+                href="/assets/cv/cv_AbdullaSajad.pdf"
+                target="_blank"
+                class="button"
+              >
+                <i class="ri-download-2-line"></i> Download CV
+              </a>
+
+              <a href="#contact" class="button__ghost">
+                <i class="ri-send-plane-line"></i>
+                <span class="button__ghost-title">Contact Me</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--==================== Experience ====================-->
+      <section class="experience section">
+        <h2 class="section__title-2">
+          <span>Experience.</span>
+        </h2>
+
+        <div class="experience__container container grid">
+          <div class="experience__box" id="experience-box-left">
+            <h2 class="experience__box__title section__title-3">Front End</h2>
+            <div class="experience__tabs">
+              <article>
+                <img
+                  src="/assets/img/checkmark.webp"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div class="article__box"></div>
+                <div class="article__title">
+                  <h3>HTML</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="/assets/img/checkmark.webp"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div class="article__box"></div>
+                <div class="article__title">
+                  <h3>CSS</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="/assets/img/checkmark.webp"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div class="article__box"></div>
+                <div class="article__title">
+                  <h3>SCSS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="/assets/img/checkmark.webp"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div class="article__box"></div>
+                <div class="article__title">
+                  <h3>JavaScript</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="/assets/img/checkmark.webp"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div class="article__box"></div>
+                <div class="article__title">
+                  <h3>Vue.js</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="/assets/img/checkmark.webp"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div class="article__box"></div>
+                <div class="article__title">
+                  <h3>Webpack</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+
+              <article>
+                <img
+                  src="/assets/img/checkmark.webp"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div class="article__box"></div>
+                <div class="article__title">
+                  <h3>React</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+
+              <article>
+                <img
+                  src="/assets/img/checkmark.webp"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div class="article__box"></div>
+                <div class="article__title">
+                  <h3>Angular</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="experience__box" id="experience-box-right">
+            <h2 class="experience__box__title section__title-3">Back End</h2>
+            <div class="experience__tabs">
+              <article>
+                <img
+                  src="/assets/img/checkmark.webp"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div class="article__box"></div>
+                <div class="article__title">
+                  <h3>PostgreSQL</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="/assets/img/checkmark.webp"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div class="article__box"></div>
+                <div class="article__title">
+                  <h3>My SQL</h3>
+                  <p>Advanced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="/assets/img/checkmark.webp"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div class="article__box"></div>
+                <div class="article__title">
+                  <h3>Expressjs</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="/assets/img/checkmark.webp"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div class="article__box"></div>
+                <div class="article__title">
+                  <h3>Django</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="/assets/img/checkmark.webp"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div class="article__box"></div>
+                <div class="article__title">
+                  <h3>Spring</h3>
+                  <p>Advanced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="/assets/img/checkmark.webp"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div class="article__box"></div>
+                <div class="article__title">
+                  <h3>Node JS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--==================== PROJECTS ====================-->
+      <section class="projects section" id="projects">
+        <h2 class="section__title-1">
+            <span>Frontend Projects.</span>
+        </h2>
+    
+        <div class="projects__container container grid">
+            <!-- Project 1: Art Store Website -->
+            <article class="projects__card">
+                <a href="https://art-store-eta.vercel.app/" target="_blank" class="projects__link">
+                    <div class="projects__image">
+                        <img src="/assets/img/art-store-eta.webp" alt="art-store-eta" class="projects__img" />
+                        <a href="https://art-store-eta.vercel.app/" target="_blank" class="projects__button button">
+                            <i class="ri-arrow-right-up-line"></i>
+                        </a>
+                    </div>
+                </a>
+    
+                <div class="projects__content">
+                    <h3 class="projects__subtitle">Website</h3>
+                    <h2 class="projects__title">Art Store Website</h2>
+    
+                    <p class="projects__description">
+                        Project is a website sales of watercolor paintings, oil paintings, acrylic paintings, and other
+                        types of paintings. Project have a lot of features like: Login, Register, Add to cart, Checkout,
+                        Payment, etc.
+                    </p>
+                </div>
+    
+                <a href="https://art-store-eta.vercel.app/" target="_blank" class="projects__demo button">
+                    <i class="ri-layout-6-line"></i> Live Demo
+                </a>
+            </article>
+    
+            <!-- Project 2: Battery Status Website -->
+            <article class="projects__card">
+                <a href="http://battery-status.vercel.app/" target="_blank" class="projects__link">
+                    <div class="projects__image">
+                        <img src="/assets/img/battery.webp" alt="project-1" class="projects__img" />
+                        <a href="http://battery-status.vercel.app/" target="_blank" class="projects__button button">
+                            <i class="ri-arrow-right-up-line"></i>
+                        </a>
+                    </div>
+                </a>
+    
+                <div class="projects__content">
+                    <h3 class="projects__subtitle">Website</h3>
+                    <h2 class="projects__title">Battery Status Website</h2>
+    
+                    <p class="projects__description">
+                        Project is a website that helps you check the battery status of your device. Project have a lot of
+                        features like: Check battery status, Check battery level, Check battery charging, etc.
+                    </p>
+                </div>
+    
+                <a href="http://battery-status.vercel.app/" target="_blank" class="projects__demo button">
+                    <i class="ri-layout-6-line"></i> Live Demo
+                </a>
+            </article>
+    
+            <!-- Project 3: World Clock Website -->
+            <article class="projects__card">
+                <a href="https://worldclocks.vercel.app/" target="_blank" class="projects__link">
+                    <div class="projects__image">
+                        <img src="/assets/img/world-clock.webp" alt="project-1" class="projects__img" />
+                        <a href="https://worldclocks.vercel.app/" target="_blank" class="projects__button button">
+                            <i class="ri-arrow-right-up-line"></i>
+                        </a>
+                    </div>
+                </a>
+    
+                <div class="projects__content">
+                    <h3 class="projects__subtitle">Website</h3>
+                    <h2 class="projects__title">World Clock Website</h2>
+    
+                    <p class="projects__description">
+                        Project is a website that helps you check the time of countries around the world. Project have a lot
+                        of features like: Check current time, Add clock, Delete clock, etc.
+                    </p>
+                </div>
+    
+                <a href="https://worldclocks.vercel.app/" target="_blank" class="projects__demo button">
+                    <i class="ri-layout-6-line"></i> Live Demo
+                </a>
+            </article>
+        </div>
+    
+        <div style="text-align: center;">
+            <h2>Backend Projects will be updated soon...</h2>
+        </div>
+    </section>
+    
+
+      <!--==================== CONTACT ====================-->
+      <section class="contact section" id="contact">
+        <div class="contact__container grid">
+          <div class="contact__data">
+            <h2 class="section__title-2">
+              <span>Contact Me.</span>
+            </h2>
+
+            <p class="contact__description-1">
+              Send me  Email  and I'll get
+              back to you.
+            </p>
+
+          
+
+            <div class="geometric-box"></div>
+          </div>
+
+          <div class="contact__mail">
+            <h2 class="contact__title">Send Me A Message</h2>
+
+            <form action="" class="contact__form" id="contact-form">
+              <div class="contact__group">
+                <div class="contact__box">
+                  <input
+                    type="text"
+                    name="user_name"
+                    class="contact__input"
+                    id="name"
+                    placeholder="First Name"
+                    required
+                  />
+                  <label for="name" class="contact__label">First Name</label>
+                </div>
+
+                <div class="contact__box">
+                  <input
+                    type="email"
+                    name="user_email"
+                    class="contact__input"
+                    id="email"
+                    placeholder="Email Address"
+                    required
+                  />
+                  <label for="email" class="contact__label">
+                    Email Address
+                  </label>
+                </div>
+              </div>
+
+              <div class="contact__box">
+                <input
+                  type="text"
+                  name="user_subject"
+                  class="contact__input"
+                  id="subject"
+                  placeholder="Subject"
+                  required
+                />
+                <label for="subject" class="contact__label"> Subject </label>
+              </div>
+
+              <div class="contact__box contact__area">
+                <textarea
+                  name="user_message"
+                  id="message"
+                  class="contact__input"
+                  placeholder="Message"
+                  required
+                ></textarea>
+                <label for="message" class="contact__label"> Message </label>
+              </div>
+
+              <div
+                class="g-recaptcha"
+                data-sitekey="6LevFzYoAAAAAAULqxbRdA8rTmtz3PK5dOiGGLuB"
+                data-callback="enableBtn"
+                data-expired-callback="tokenExpired"
+                data-error-callback="reVerify"
+              ></div>
+              <button
+                class="contact__button button"
+                id="contact-button"
+                type="submit"
+                disabled
+              >
+                <i class="ri-send-plane-line"></i> Send Message
+              </button>
+              <p class="contact__message" id="contact-message"></p>
+            </form>
+          </div>
+
+          <div class="contact__social">
+            <img
+              src="/assets/img/curved-arrow.svg"
+              alt="curved-arrow"
+              class="contact__social-arrow"
+            />
+
+            <div class="contact__social-data">
+              <div>
+                <p class="contact__social-description-1">Don't Have EMail</p>
+
+                <p class="contact__social-description-2">
+                  Contact me on  my social networks
+                </p>
+              </div>
+
+              <div class="contact__social-links">
+                <a
+                  href="https://www.facebook.com/sajadtlpr/"
+                  target="_blank"
+                  class="contact__social-link"
+                >
+                  <i class="ri-facebook-box-line"></i>
+                </a>
+                <a
+                  href="https://www.instagram.com/sajad.tlpr/"
+                  target="_blank"
+                  class="contact__social-link"
+                >
+                  <i class="ri-instagram-line"></i>
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/abdulla-sajad-b7914124a"
+                  target="_blank"
+                  class="contact__social-link"
+                >
+                  <i class="ri-linkedin-box-line"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!--==================== FOOTER ====================-->
+    <footer class="footer">
+      <div class="footer__container container grid">
+        <ul class="footer__links">
+          <li><a class="footer__link" href="#About">About</a></li>
+          <li><a class="footer__link" href="#experience">Experience</a></li>
+          <li><a class="footer__link" href="#projects">Projects</a></li>
+        </ul>
+
+        <span class="footer__copy">
+          &#169; All Rights Reserved By
+          <a href="#">Abdulla Sajad</a>
+        </span>
+      </div>
+    </footer>
+
+    <!--========== SCROLL UP ==========-->
+    <a href="#" class="scrollup" id="scroll-up">
+      <i class="ri-arrow-up-s-line"></i>
+    </a>
+    <!--=============== SCROLLREVEAL ===============-->
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+    <!--=============== EMAIL JS ===============-->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <!--=============== MAIN JS ===============-->
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
